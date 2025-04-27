@@ -1,0 +1,9 @@
++ For RISC-V: the Docker image is in **little-endian**. 
+
+	+ For example, this means that the following instruction in the hexdump 
+
+	`101f2:	c4878513          	addi	a0,a5,-952`
+	
+	will actually be encoded as `0x138587c4` with the LSB at the lowest address.
+
+I may add other hints here... check out the write-up on the website for more direction!
