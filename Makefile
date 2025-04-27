@@ -5,7 +5,7 @@ DOCKER_RUN = docker run \
 						 -it $(DOCKER_NAME)
 
 usage:
-	@echo "usage: build_docker shell"
+	@echo "usage: build_docker shell clean"
 
 build_docker:
 	docker build -t $(DOCKER_NAME) .
@@ -13,4 +13,7 @@ build_docker:
 shell:
 	$(DOCKER_RUN) bash
 
-.PHONY: build_docker shell
+clean:
+	rm $(EXE_NAME) *.dump *.o *.riscv $(EXE_NAME).*
+
+.PHONY: build_docker shell clean
