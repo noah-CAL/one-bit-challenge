@@ -47,6 +47,8 @@ The `-static` is to ensure that there are no missing libraries. Then, it can be 
 >$ qemu-riscv64-static mystery
 ```
 
-If compiled locally (x86, ARM, etc.) then simply compiling with `gcc` and running the executable will work.
+If compiled locally (x86, ARM, etc.) with `gcc` then simply running the executable will work.
+
+Remember that your goal is to make the executable print `Success`! See the [one-bit challenge](www.noahsedlik.com/blog/one-bit-challenge-1) introduction for more information.
 
 Good luck!
