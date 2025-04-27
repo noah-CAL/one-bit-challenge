@@ -1,0 +1,8 @@
+*.dump
+*.o
+*.out
+*.S
+*.riscv
+
+mystery
+mystery.*
