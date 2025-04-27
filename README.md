@@ -49,6 +49,8 @@ The `-static` is to ensure that there are no missing libraries. Then, it can be 
 
 If compiled locally (x86, ARM, etc.) with `gcc` then simply running the executable will work.
 
+By default, `main.c` will output the hash for the binary file named `mystery`. Feel free to change the `BIN_FILE` macro definition. 
+
 Remember that your goal is to make the executable print `Success`! See the [one-bit challenge](www.noahsedlik.com/blog/one-bit-challenge-1) introduction for more information.
 
 Good luck!
